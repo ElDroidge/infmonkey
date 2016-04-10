@@ -16,8 +16,8 @@ import sys
 import random
 
 colSelection = [34, 37, 31,] #Colours to use - refer to Colour Index
-totalChar = raw_input("Number of characters to output: ")
-lineBreak = raw_input("Number of characters to break line after: ")
+totalChar = raw_input("Number of characters to output (try 320): ")
+lineBreak = raw_input("Number of characters to break line after (try 40): ")
 
 def randomColour():
 	foo = random.choice(colSelection) 
