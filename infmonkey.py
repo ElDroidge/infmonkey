@@ -18,7 +18,7 @@ print("----------")
 
 for i in range(int(charTotal)):
     sys.stdout.write(random.choice(charSet))
-    if i % int(lineBreak) == 0:
+    if i % int(lineBreak) == 0 and i != 0:
     	print("\n")
     	
 
