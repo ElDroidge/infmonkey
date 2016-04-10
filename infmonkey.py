@@ -10,19 +10,24 @@ import sys
 import string
 import random
 
+#custom functions here
+def sepr():
+	print("----------\n")
+
+#variables here	
 charSet = (tuple(string.ascii_lowercase) + (".", ",", " ")) #Declares the keys on the typewriter keyboard
 charTotal = raw_input("Number of characters to output: ") #Declares the number of keys in final document
 lineBreak = raw_input("Number of characters to break line after: ")
 
-print("----------")
+sepr()
 
 for i in range(int(charTotal)):
-    sys.stdout.write(random.choice(charSet))
     if i % int(lineBreak) == 0 and i != 0:
     	print("\n")
-    	
+    sys.stdout.write(random.choice(charSet))
+print("\n")
 
-print("\n----------")
+sepr()
 	
 
 
